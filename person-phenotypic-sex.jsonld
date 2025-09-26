@@ -1,0 +1,41 @@
+{
+  "@context": "https://socialcaredata.github.io/",
+  "id": "https://socialcaredata.github.io/person-phenotypic-sex",
+  "title": "Person Phenotypic Sex",
+  "description": "Controlled Vocabulary of Phenotypic sex codes based on the NHS Data Dictionary. ",
+  "source": "https://www.datadictionary.nhs.uk/data_elements/person_phenotypic_sex.html",
+  "type": "ConceptScheme",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "concept": [
+    {
+      "id": "https://socialcaredata.github.io/person-phenotypic-sex#00001",
+      "identifier": "00001",
+      "type": "Concept",
+      "prefLabel": "Male"
+    },
+    {
+      "id": "https://socialcaredata.github.io/person-phenotypic-sex#00002",
+      "identifier": "00002",
+      "type": "Concept",
+      "prefLabel": "Female"
+    },
+    {
+      "id": "https://socialcaredata.github.io/person-phenotypic-sex#00009",
+      "identifier": "00009",
+      "type": "Concept",
+      "prefLabel": "Indeterminate"
+    },
+    {
+      "id": "https://socialcaredata.github.io/person-phenotypic-sex#0000x",
+      "identifier": "0000x",
+      "type": "Concept",
+      "prefLabel": "Not known"
+    },
+    {
+      "id": "https://socialcaredata.github.io/person-phenotypic-sex#0000z",
+      "identifier": "0000z",
+      "type": "Concept",
+      "prefLabel": "Not stated"
+    }
+  ]
+}
