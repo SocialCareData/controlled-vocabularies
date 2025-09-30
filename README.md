@@ -15,7 +15,7 @@ Where categorical data is required across our data standards, we require a clear
 * Date-accuracy-indicator
     * Birth dates may be unknown, estimated, or accurate, across years, months, or days. 
     * We therefore require a Birth Date Accuracy Indicator, which conforms to date-accuracy-indicator and is a triple of letters (eg. AEU for accurate year, estimated month, unknown day)
-    * This is a direct reuse of HL7 Australia's proposed addition to FHIR (link??) 
+    * This is aligned with HL7 Australia's proposed addition to FHIR (link??), although with Y-M-D order as per ISO 8601
 * Gender
     * Note discussion on this subject
     * We're referencing the [NHS Person Stated Gender Code](https://archive.datadictionary.nhs.uk/DD%20Release%20May%202024/data_elements/person_stated_gender_code.html)
