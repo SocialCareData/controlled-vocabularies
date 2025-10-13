@@ -1,4 +1,4 @@
-# controlled-vocabularies
+# Controlled Vocabularies
 Where categorical data is required across our data standards, we require a clear definitions of what categories can be chosen for what kinds of data, what each category means, how it is encoded, and more. This repo serves as a central location for this information.
 
 
