@@ -18,4 +18,6 @@ done
 * types
 
 #### IG
-* a lot
+* RequestTypeCode
+* RequestDataCategoriesCode
+* RequestAssertedPurposeCode
