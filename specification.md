@@ -1,7 +1,7 @@
 # Controlled Vocabularies
 
-## `Name.use.type`
-A person can have more than one name on their record. The Name object, therefore, requires a Name.use data point, a categorical variable encoded by Name.use.type. We reuse [FHIR's NameUse binding](http://hl7.org/fhir/codesystem-name-use.html).
+## `Name.use`
+A person can have more than one name on their record. The Name object, therefore, requires a Name.use data point, a categorical variable encoded by Name.use. We reuse [FHIR's NameUse binding](http://hl7.org/fhir/codesystem-name-use.html).
 
 Used in:
 * Person Data Standard (Identification)
@@ -19,7 +19,7 @@ Inherits from:
 |`old`|Old|A name that is no longer in use (or was never correct, but retained for records)|
 |`maiden`|Maiden|A name used prior to changing name because of marriage. This name use is for use by applications that collect and store names that were used prior to a marriage. Marriage naming customs vary greatly around the world, and are constantly changing. This term is not gender specific. The use of this term does not imply any particular history for a person's name.|
 
-<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Name.use.type" class="web-button" target="_blank">Raise an issue about Name.use.type</a>
+<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Name.use" class="web-button" target="_blank">Raise an issue about Name.use</a>
 
 ## `DateOfBirth.accuracyIndicator`
 Birth dates may be unknown, estimated, or accurate, across years, months, or days. We therefore require a Birth Date Accuracy Indicator, which conforms to date-accuracy-indicator and is a triple of letters that aligns with ISO 8601 date format (Y-M-D, so eg. AEU for accurate year, estimated month, unknown day).
