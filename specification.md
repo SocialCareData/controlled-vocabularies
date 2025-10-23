@@ -40,3 +40,37 @@ Aligns with:
 |`X`|Expected|For use with pre-natal persons with expected dates of birth|
 
 <a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+DateOfBirth.accuracyIndicator" class="web-button" target="_blank">Raise an issue about DateOfBirth.accuracyIndicator</a>
+
+## `Gender`
+(TODO: add notes here) 
+
+Used in:
+* Person Data Standard (Identification)
+
+Aligns with:
+* [NHS Person Stated Gender Code](https://archive.datadictionary.nhs.uk/DD%20Release%20May%202024/attributes/person_stated_gender_code.html)
+
+|Code|Display|Definition|
+|:---|:------|:---------|
+|`1`|Male|
+|`2`|Female|
+|`9`|Indeterminate|Unable to be classified as either male or female|
+
+<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Gender" class="web-button" target="_blank">Raise an issue about Gender</a>
+
+## `Sex`
+(TODO: add notes here) 
+
+Used in:
+* Person Data Standard (Identification)
+
+Aligns with:
+* [NHS Person Phenotypic Sex Classification](https://archive.datadictionary.nhs.uk/DD%20Release%20May%202024/attributes/person_phenotypic_sex_classification.html)
+
+|Code|Display|Definition|
+|:---|:------|:---------|
+|`1`|Male|
+|`2`|Female|
+|`9`|Indeterminate|Unable to be classified as either male or female|
+
+<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Sex" class="web-button" target="_blank">Raise an issue about Sex</a>
