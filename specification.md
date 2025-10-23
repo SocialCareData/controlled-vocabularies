@@ -1,7 +1,7 @@
 # Controlled Vocabularies
 
-## `Name.use`
-A person can have more than one name on their record. The Name object, therefore, requires a Name.use data point, a categorical variable encoded by Name.use. We reuse [FHIR's NameUse binding](http://hl7.org/fhir/codesystem-name-use.html).
+## `PersonNameUseCode`
+A person can have more than one name on their record. The Name object, therefore, requires a PersonNameUseCode data point, a categorical variable encoded by PersonNameUseCode. We reuse [FHIR's NameUse binding](http://hl7.org/fhir/codesystem-name-use.html).
 
 Used in:
 * Person Data Standard (Identification)
@@ -19,12 +19,12 @@ Inherits from:
 |`old`|Old|A name that is no longer in use (or was never correct, but retained for records)|
 |`maiden`|Maiden|A name used prior to changing name because of marriage. This name use is for use by applications that collect and store names that were used prior to a marriage. Marriage naming customs vary greatly around the world, and are constantly changing. This term is not gender specific. The use of this term does not imply any particular history for a person's name.|
 
-<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Name.use" class="web-button" target="_blank">Raise an issue about Name.use</a>
+<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+PersonNameUseCode" class="web-button" target="_blank">Raise an issue about PersonNameUseCode</a>
 
-## `DateOfBirth.accuracyIndicator`
+## `DateOfBirthaccuracyIndicatorCode`
 Birth dates may be unknown, estimated, or accurate, across years, months, or days. We therefore require a Birth Date Accuracy Indicator, which conforms to date-accuracy-indicator and is a triple of letters that aligns with ISO 8601 date format (Y-M-D, so eg. AEU for accurate year, estimated month, unknown day).
 
-`DateOfBirth.accuracyIndicator` has cardinality 0,1. If it is not present, we assume AAA. 
+`DateOfBirthaccuracyIndicatorCode` has cardinality 0,1. If it is not present, we assume AAA. 
 
 Used in:
 * Person Data Standard (Identification)
@@ -39,9 +39,9 @@ Aligns with:
 |`U`|Unknown|Entirely unknown and unestimable element of the date. |
 |`X`|Expected|For use with pre-natal persons with expected dates of birth|
 
-<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+DateOfBirth.accuracyIndicator" class="web-button" target="_blank">Raise an issue about DateOfBirth.accuracyIndicator</a>
+<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+DateOfBirthaccuracyIndicatorCode" class="web-button" target="_blank">Raise an issue about DateOfBirthaccuracyIndicatorCode</a>
 
-## `Gender`
+## `PersonGenderCode`
 (TODO: add notes here) 
 
 Used in:
@@ -56,9 +56,9 @@ Aligns with:
 |`2`|Female|
 |`9`|Indeterminate|Unable to be classified as either male or female|
 
-<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Gender" class="web-button" target="_blank">Raise an issue about Gender</a>
+<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+PersonGenderCode" class="web-button" target="_blank">Raise an issue about PersonGenderCode</a>
 
-## `Sex`
+## `Person.SexCode`
 (TODO: add notes here) 
 
 Used in:
@@ -73,4 +73,4 @@ Aligns with:
 |`2`|Female|
 |`9`|Indeterminate|Unable to be classified as either male or female|
 
-<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Sex" class="web-button" target="_blank">Raise an issue about Sex</a>
+<a href="https://github.com/SocialCareData/controlled-vocabularies/issues/new?template=content_issue.yml&amp;title=Issue+regarding+Person.SexCode" class="web-button" target="_blank">Raise an issue about Person.SexCode</a>
