@@ -1,23 +1,7 @@
 # Controlled Vocabularies
-Where categorical data is required across our data standards, we require a clear definitions of what categories can be chosen for what kinds of data, what each category means, how it is encoded, and more. This repo serves as a central location for this information.
 
+This repository contains the controlled vocabularies and categorical code lists used across the Multi-Agency Information Sharing (MAIS) data standards. 
 
-### Where do we need controlled vocabularies?
-#### Person Spec
-done
+Standardising these vocabularies ensures that data remains interoperable and unambiguous when shared between different agencies, such as Local Authorities, Health providers, and the Police.
 
-
-#### Placement spec
-* planned vs emergency, although that's meant to be a boolean so idk maybe the spec needs changing there
-* daily / few times a week / whatever -- just need codes for these
-* communication needs
-* provision recommendations
-* risks
-
-#### API catalogue
-* types
-
-#### IG
-* RequestTypeCode
-* RequestDataCategoriesCode
-* RequestAssertedPurposeCode
+The vocabularies are defined in `vocabularies.json` and are rendered dynamically on the [Social Care Data Standards website](https://socialcaredata.github.io/spec/controlled-vocabularies).

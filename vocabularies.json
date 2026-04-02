@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "title": "Controlled Vocabularies",
+    "version": "0.1",
+    "status": "draft",
+    "effectiveDate": "2026-04-01",
+    "description": "Controlled vocabularies required for the MAIS standards."
+  },
+  "entities": [
+    {
+      "name": "ActiveCode",
+      "description": "Codes to indicate if a record, service, or relationship is active or inactive.",
+      "fields": [
+        {
+          "name": "active",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "The record is active and in use."
+        },
+        {
+          "name": "inactive",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "The record is inactive or closed."
+        }
+      ]
+    },
+    {
+      "name": "OrganisationCode",
+      "description": "Codes to indicate the type of organisation.",
+      "fields": [
+        {
+          "name": "local-authority",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Local Authority"
+        },
+        {
+          "name": "nhs-trust",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "NHS Trust"
+        },
+        {
+          "name": "police-force",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Police Force"
+        }
+      ]
+    },
+    {
+      "name": "ServiceCode",
+      "description": "Codes to indicate the type of service.",
+      "fields": [
+        {
+          "name": "youth-offending",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Youth Offending Team"
+        },
+        {
+          "name": "primary-school",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Primary School"
+        },
+        {
+          "name": "social-care",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Social Care Department"
+        }
+      ]
+    },
+    {
+      "name": "EventCode",
+      "description": "Codes to indicate the type of life event.",
+      "fields": [
+        {
+          "name": "birth",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Birth"
+        },
+        {
+          "name": "death",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Death"
+        },
+        {
+          "name": "ae-attendance",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "A&E Attendance"
+        },
+        {
+          "name": "school-exclusion",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "School Exclusion"
+        },
+        {
+          "name": "missing-person",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Reported Missing"
+        },
+        {
+          "name": "safeguarding-concern",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Safeguarding Concern Raised"
+        }
+      ]
+    },
+    {
+      "name": "episodeCode",
+      "description": "Codes to indicate the type of service episode.",
+      "fields": [
+        {
+          "name": "early-help",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Early Help Assessment / Intervention"
+        },
+        {
+          "name": "cin-plan",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Child in Need (CIN) Plan"
+        },
+        {
+          "name": "cp-plan",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Child Protection (CP) Plan"
+        },
+        {
+          "name": "section-47",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Section 47 Enquiry"
+        },
+        {
+          "name": "care-leaver",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Care Leaver Support"
+        },
+        {
+          "name": "adult-safeguarding",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Adult Safeguarding Enquiry (Section 42)"
+        }
+      ]
+    }
+  ]
+}
