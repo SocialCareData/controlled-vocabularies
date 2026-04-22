@@ -8,24 +8,6 @@
   },
   "entities": [
     {
-      "name": "ActiveCode",
-      "description": "Codes to indicate if a record, service, or relationship is active or inactive.",
-      "fields": [
-        {
-          "name": "active",
-          "cardinality": "-",
-          "type": "Code",
-          "description": "The record is active and in use."
-        },
-        {
-          "name": "inactive",
-          "cardinality": "-",
-          "type": "Code",
-          "description": "The record is inactive or closed."
-        }
-      ]
-    },
-    {
       "name": "OrganisationCode",
       "description": "Codes to indicate the type of organisation.",
       "fields": [
@@ -66,10 +48,22 @@
           "description": "Primary School"
         },
         {
+          "name": "high-school",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Secondary or High School"
+        },
+        {
           "name": "social-care",
           "cardinality": "-",
           "type": "Code",
           "description": "Social Care Department"
+        },
+        {
+          "name": "family-court",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Family Court"
         }
       ]
     },
@@ -102,6 +96,12 @@
           "description": "School Exclusion"
         },
         {
+          "name": "school-suspension",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "School Suspension"
+        },
+        {
           "name": "missing-person",
           "cardinality": "-",
           "type": "Code",
@@ -112,6 +112,18 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Safeguarding Concern Raised"
+        },
+        {
+          "name": "homeless",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Made homeless"
+        },
+        {
+          "name": "school-exclusion",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "School Exclusion"
         }
       ]
     },
@@ -124,6 +136,18 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Early Help Assessment / Intervention"
+        },
+        {
+          "name": "ehcp",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Education, Health, and Care plan"
+        },
+        {
+          "name": "family-court-order",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Any order made by family court"
         },
         {
           "name": "cin-plan",
@@ -148,6 +172,12 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Care Leaver Support"
+        },
+        {
+          "name": "child-looked-after",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Child in LA care"
         },
         {
           "name": "adult-safeguarding",
