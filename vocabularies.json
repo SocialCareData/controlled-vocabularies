@@ -186,6 +186,42 @@
           "description": "Adult Safeguarding Enquiry (Section 42)"
         }
       ]
+    },
+    {
+      "name": "ObservationType",
+      "description": "Codes to indicate the type of qualitative observation.",
+      "fields": [
+        {
+          "name": "xxx",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "TODO"
+        }
+      ]
+    },
+    {
+      "name": "MeasurementUnit",
+      "description": "Codes to indicate the unit of measurement.",
+      "fields": [
+        {
+          "name": "xxx",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "TODO"
+        }
+      ]
+    },
+    {
+      "name": "MeasurementType",
+      "description": "Codes to indicate the type of measurement.",
+      "fields": [
+        {
+          "name": "xxx",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "TODO"
+        }
+      ]
     }
   ]
 }
