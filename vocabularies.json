@@ -54,6 +54,24 @@
           "description": "Secondary or High School"
         },
         {
+          "name": "SEN-primary-school",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Primary School with specialist SEN services"
+        },
+        {
+          "name": "SEN-high-school",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Secondary or High School with specialist SEN services"
+        },
+        {
+          "name": "alternative-provision-school",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Alternative provision school"
+        },
+        {
           "name": "social-care",
           "cardinality": "-",
           "type": "Code",
@@ -112,6 +130,12 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Safeguarding Concern Raised"
+        },
+        {
+          "name": "referral",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Referral made to relevant authority"
         },
         {
           "name": "homeless",
@@ -192,10 +216,150 @@
       "description": "Codes to indicate the type of qualitative observation.",
       "fields": [
         {
-          "name": "xxx",
+          "name": "SEND",
           "cardinality": "-",
           "type": "Code",
-          "description": "TODO"
+          "description": "Observed special educational needs and disabilities, via DfE codes",
+          "children": [
+            {
+              "name": "SpLD",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Specific learning Difficulty: difficulty that affect one or more specific aspects of learning. This encompasses a range of conditions including dyslexia, dyscalculia, dysgraphia, dyspraxia etc. "
+            },
+            {
+              "name": "MLD",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Moderate Learning Difficulty: well below expected levels of attainment in all or most areas of the curriculum, despite appropriate interventions. They will have much greater difficulty than their peers in acquiring basic literacy and numeracy skills and in understanding concepts. They may also have associated speech and language delay, low self-esteem, low levels of concentration and underdeveloped social skills."
+            },
+            {
+              "name": "SLD",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Severe Learning Difficulty: significant intellectual or cognitive impairments and are likely to need support in all areas of the curriculum."
+            },
+            {
+              "name": "PMLD",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Profound and Multiple Learning Difficulty: have severe and complex learning difficulties as well as a physical disability or sensory impairment."
+            },
+            {
+              "name": "SLCN",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Speech, Language and Communication Needs: difficulty in communicating with others such as difficulty saying what they want to, understanding what is being said to them, difficulties understanding and applying social rules."
+            },
+            {
+              "name": "ASC",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Autistic Spectrum Condition: including Asperger's Syndrome and Autism with associated difficulties such as difficulties with language, communication, imagination and social interactions."
+            },
+            {
+              "name": "SEMH",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Social, Emotional and Mental Health difficulties: These may include becoming withdrawn or isolated, as well as displaying challenging, disruptive or disturbing behaviour. These behaviours may reflect underlying mental health difficulties such as anxiety or depression, self-harming, substance misuse, eating disorders or physical symptoms that are medically unexplained. "
+            },
+            {
+              "name": "VI",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Visual Impairment: Partial or complete loss of sight not correctable by usual means (e.g. prescribed glasses or contact lens)."
+            },
+            {
+              "name": "HI",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Hearing Impairment: With a degree of hearing loss."
+            },
+            {
+              "name": "MSI",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Multi Sensory Impairment: combined vision and hearing impairments."
+            },
+            {
+              "name": "PD",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Physical Disability: limitation on a person's physical functioning, mobility, dexterity or stamina."
+            }
+          ]
+        },
+        {
+          "name": "EAL",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "English as an additional language",
+          "children":[
+            {
+              "name": "$ISO 639-1 Code$",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Two-letter code for observed first language, using ISO 639-1",
+              "vocabulary": {
+                "name": "ISO 639-1",
+                "url": "https://socialcaredata.github.io/todo.html"
+              }
+            }
+          ]
+        },
+        {
+          "name": "free-school-meals",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Recipient of free school meals (FSM)"
+        },
+        {
+          "name": "NEET",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Not in Education, Employment, or Training"
+        },
+        {
+          "name": "non-accidental-injury",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Observed non-accidental injury"
+        },
+        {
+          "name": "persistent-school-absences",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Reported persistent absences from school"
+        },
+        {
+          "name": "pupil-premium",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Eligible for Pupil Premium"
+        },
+        {
+          "name": "religion",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Religious affiliation",
+          "children":[
+            {
+              "name": "$HL7 Religious Affiliation Code$",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Numeric code for religious affiliations",
+              "vocabulary": {
+                "name": "ReligiousAffiliation",
+                "url": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"
+              }
+            }
+          ]
+        },
+        {
+          "name": "temp-accomodation",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Living in temporary accomodation"
         }
       ]
     },
@@ -204,10 +368,16 @@
       "description": "Codes to indicate the unit of measurement.",
       "fields": [
         {
-          "name": "xxx",
+          "name": "count",
           "cardinality": "-",
           "type": "Code",
-          "description": "TODO"
+          "description": "Number of discrete items, entities, or events. Typically an integer"
+        },
+        {
+          "name": "pct",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Percentage (%)"
         }
       ]
     },
@@ -216,7 +386,25 @@
       "description": "Codes to indicate the type of measurement.",
       "fields": [
         {
-          "name": "xxx",
+          "name": "Attendance",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "TODO"
+        },
+        {
+          "name": "Authorised Absences",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "TODO"
+        },
+        {
+          "name": "School average attendance",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "TODO"
+        },
+        {
+          "name": "Unauthorised Absences",
           "cardinality": "-",
           "type": "Code",
           "description": "TODO"
