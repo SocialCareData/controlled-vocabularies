@@ -82,6 +82,12 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Family Court"
+        },
+        {
+          "name": "CAMHS",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Children and Adolescent mental health services"
         }
       ]
     },
@@ -184,6 +190,12 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Child Protection (CP) Plan"
+        },
+        {
+          "name": "CAMHS-plan",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Children and Adolescent mental health services care plan"
         },
         {
           "name": "section-47",
