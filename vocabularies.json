@@ -88,6 +88,156 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Children and Adolescent mental health services"
+        },
+        {
+          "name": "reablement",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Reablement"
+        },
+        {
+          "name": "short-term-nursing-care",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Short term nursing care"
+        },
+        {
+          "name": "short-term-residential-care",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Short term residential care"
+        },
+        {
+          "name": "long-term-nursing-care",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Long term nursing care"
+        },
+        {
+          "name": "long-term-residential-care",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Long term residential care"
+        },
+        {
+          "name": "home-support-domiciliary",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Home support or domiciliary care"
+        },
+        {
+          "name": "day-support",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Day support"
+        },
+        {
+          "name": "meals",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Meals"
+        },
+        {
+          "name": "transport",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Transport"
+        },
+        {
+          "name": "equipment",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Equipment"
+        },
+        {
+          "name": "direct-payment",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Direct payment"
+        },
+        {
+          "name": "shared-lives",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Shared Lives"
+        },
+        {
+          "name": "community-supported-living",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Community supported living"
+        },
+        {
+          "name": "extra-care-housing",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Extra care housing"
+        },
+        {
+          "name": "social-worker-support",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Professional support: Social worker"
+        },
+        {
+          "name": "other-professional-support",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Professional support: Other"
+        },
+        {
+          "name": "learning-education-employment",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Learning, education or employment support"
+        },
+        {
+          "name": "end-of-life-care",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "End of life care"
+        },
+        {
+          "name": "emergency-support",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Emergency support"
+        },
+        {
+          "name": "other-short-term-support",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Other short term support"
+        },
+        {
+          "name": "other-long-term-support",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Other long term support"
+        },
+        {
+          "name": "carer-respite",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Unpaid carer respite"
+        },
+        {
+          "name": "carer-sitting-service",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Unpaid carer sitting service"
+        },
+        {
+          "name": "carer-universal-services",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Unpaid carer universal services"
+        },
+        {
+          "name": "other-carer-support",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Other unpaid carer support"
         }
       ]
     },
@@ -148,12 +298,6 @@
           "cardinality": "-",
           "type": "Code",
           "description": "Made homeless"
-        },
-        {
-          "name": "school-exclusion",
-          "cardinality": "-",
-          "type": "Code",
-          "description": "School Exclusion"
         }
       ]
     },
@@ -372,6 +516,408 @@
           "type": "Code",
           "cardinality": "-",
           "description": "Living in temporary accomodation"
+        },
+        {
+          "name": "accommodation-status",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Housing and living arrangements of the individual",
+          "children": [
+            {
+              "name": "owner-occupier",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Owner occupier or shared ownership scheme"
+            },
+            {
+              "name": "tenant-social",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Tenant: Local authority or other social housing provider"
+            },
+            {
+              "name": "tenant-private",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Tenant: Private landlord"
+            },
+            {
+              "name": "settled-mainstream-family",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Settled mainstream housing with family or friends"
+            },
+            {
+              "name": "supported-accommodation",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Supported accommodation, supported lodgings or supported group home"
+            },
+            {
+              "name": "shared-lives",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Shared Lives scheme"
+            },
+            {
+              "name": "approved-premises",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Approved premises for offenders released from prison or under probation supervision"
+            },
+            {
+              "name": "sheltered-housing",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Sheltered housing, extra care housing or other sheltered housing"
+            },
+            {
+              "name": "mobile-accommodation",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Mobile accommodation for Gypsy, Roma and Traveller communities"
+            },
+            {
+              "name": "rough-sleeping",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Rough sleeper or squatting"
+            },
+            {
+              "name": "night-shelter",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Night shelter, emergency hostel or direct access hostel"
+            },
+            {
+              "name": "refuge",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Refuge"
+            },
+            {
+              "name": "temp-accommodation-council",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Placed in temporary accommodation by the council (inc. homelessness resettlement)"
+            },
+            {
+              "name": "staying-family-friends-short",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Staying with family or friends as a short term guest"
+            },
+            {
+              "name": "healthcare-facility",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Acute hospital or long term healthcare residential facility"
+            },
+            {
+              "name": "registered-care-home",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Registered care home"
+            },
+            {
+              "name": "registered-nursing-home",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Registered nursing home"
+            },
+            {
+              "name": "prison-detention",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Prison, young offenders institution or detention centre"
+            },
+            {
+              "name": "other-temporary",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Other temporary accommodation"
+            },
+            {
+              "name": "unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Unknown"
+            }
+          ]
+        },
+        {
+          "name": "asd-diagnosis",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Observed Autism Spectrum Disorder (ASD) diagnosis"
+        },
+        {
+          "name": "client-funding-status",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Funding status of the client for social care services",
+          "children": [
+            {
+              "name": "fully-client-funded",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Fully client funded"
+            },
+            {
+              "name": "joint-funded",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Joint client and social care funded"
+            },
+            {
+              "name": "fully-social-care-funded",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Fully social care funded"
+            },
+            {
+              "name": "unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Unknown"
+            }
+          ]
+        },
+        {
+          "name": "dbs-check",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Recorded Disclosure and Barring Service (DBS) check"
+        },
+        {
+          "name": "dementia-diagnosis",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Observed dementia diagnosis"
+        },
+        {
+          "name": "employment-status",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Employment status of the individual",
+          "children": [
+            {
+              "name": "paid-under-16h",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Paid: Less than 16 hours a week"
+            },
+            {
+              "name": "paid-16h-plus",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Paid: 16 or more hours a week"
+            },
+            {
+              "name": "paid-hours-unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Paid: Hours per week unknown"
+            },
+            {
+              "name": "seeking-work",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Not in paid employment: Seeking work"
+            },
+            {
+              "name": "not-seeking-or-retired",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Not in paid employment: Not actively seeking work or retired"
+            },
+            {
+              "name": "voluntary-only",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Not in paid employment: Voluntary work only"
+            },
+            {
+              "name": "unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Unknown"
+            }
+          ]
+        },
+        {
+          "name": "has-unpaid-carer",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Has an unpaid carer"
+        },
+        {
+          "name": "hearing-impairment",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Observed hearing impairment status",
+          "children": [
+            {
+              "name": "deaf-with-speech",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Deaf with speech"
+            },
+            {
+              "name": "deaf-without-speech",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Deaf without speech"
+            },
+            {
+              "name": "hard-of-hearing",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Hard of hearing"
+            },
+            {
+              "name": "no-impairment",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "No hearing impairment"
+            },
+            {
+              "name": "severity-unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Hearing impairment: Severity unknown"
+            },
+            {
+              "name": "unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Unknown"
+            }
+          ]
+        },
+        {
+          "name": "support-reason",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Primary reason for requiring adult social care support",
+          "children": [
+            {
+              "name": "physical-access-mobility",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Physical support: Access and mobility only"
+            },
+            {
+              "name": "physical-personal-care",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Physical Support: Personal care support"
+            },
+            {
+              "name": "sensory-visual",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Sensory Support: Support for visual impairment"
+            },
+            {
+              "name": "sensory-hearing",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Sensory Support: Support for hearing impairment"
+            },
+            {
+              "name": "sensory-dual",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Sensory Support: Support for dual impairment"
+            },
+            {
+              "name": "memory-cognition",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Support with memory and cognition"
+            },
+            {
+              "name": "learning-disability",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Learning disability support"
+            },
+            {
+              "name": "mental-health",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Mental health support"
+            },
+            {
+              "name": "substance-misuse",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Social support: Substance misuse support"
+            },
+            {
+              "name": "asylum-seeker",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Social Support: Asylum seeker support"
+            },
+            {
+              "name": "social-isolation-other",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Social support: Support for social isolation or other reason"
+            },
+            {
+              "name": "unpaid-carer",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Social support: Support to unpaid carer"
+            },
+            {
+              "name": "unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Unknown"
+            }
+          ]
+        },
+        {
+          "name": "visual-impairment",
+          "type": "Code",
+          "cardinality": "-",
+          "description": "Observed visual impairment status",
+          "children": [
+            {
+              "name": "blind",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Blind/severely sight impaired"
+            },
+            {
+              "name": "partially-sighted",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Partial sight/sight impaired"
+            },
+            {
+              "name": "no-impairment",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "No visual impairment"
+            },
+            {
+              "name": "severity-unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Visual impairment - severity unknown"
+            },
+            {
+              "name": "unknown",
+              "type": "Code",
+              "cardinality": "-",
+              "description": "Unknown"
+            }
+          ]
         }
       ]
     },
@@ -420,6 +966,12 @@
           "cardinality": "-",
           "type": "Code",
           "description": "TODO"
+        },
+        {
+          "name": "caring-hours-per-week",
+          "cardinality": "-",
+          "type": "Code",
+          "description": "Total hours spent caring per week"
         }
       ]
     }
